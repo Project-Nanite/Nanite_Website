@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experience the power of next-generation Linux distribution designed for the modern world">
+  <meta name="author" content="Nanite Linux Team">
+  <meta name="theme-color" content="#00ff88" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <title>Development Environment · Nanite Linux - The Future of Computing</title>
+  <link rel="canonical" href="//localhost:1313/docs/development-environment/">
+  <link rel="stylesheet" href="/assets/css/docs.min.8e9408609771a441499aa5571a4585b0ca95783b842d5c758af5eef1457b0fe0.css" integrity="">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+<body>
+
+<div id="outer-wrapper">
+
+  <div id="aside-wrapper">
+    <aside>
+      <div>
+        <button class="btn"><i>❌</i>Close</button>
+      </div>
+
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+
+      <nav role="navigation">
+        <details open>
+          <summary>Documentation</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/overview/">Overview</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/about/">About</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/features/">Features</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/installation/">Installation</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/ai-features/">AI Features</a>
+            </li>
+            <li>
+              <a class="active" href="//localhost:1313/docs/development-environment/">Development Environment</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Basics</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/hello-world/">Hello World</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Beyond The Basics</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/modules/">Modules</a>
+            </li>
+            </ul>
+        </details>
+        
+      </nav>
+    </aside>
+  </div>
+
+  <div id="content-wrapper">
+    <header>
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+    </header>
+
+    <main>
+      <article>
+        <nav>
+          <button class="btn"><i>⬅️</i> On this section</button>
+          <button class="btn">On this page <i>➡️</i></button>
+        </nav>
+        <header>
+          <h1>Development Environment</h1>
+          <p></p>
+        </header>
+        <div id="article-body">
+          <h1 id="development-environment">Development Environment</h1>
+<p>Nanite Linux comes with a comprehensive development environment optimized for AI and machine learning development, providing everything you need to start building intelligent applications.</p>
+<h2 id="-pre-installed-development-tools">🔧 Pre-installed Development Tools</h2>
+<h3 id="code-editors-and-ides">Code Editors and IDEs</h3>
+<p><strong>Visual Studio Code</strong></p>
+<ul>
+<li>Pre-configured with AI extensions</li>
+<li>Nanite AI Assistant integration</li>
+<li>Python, JavaScript, and Rust support</li>
+<li>Git integration with AI-assisted commits</li>
+<li>Remote development capabilities</li>
+</ul>
+<p><strong>JupyterLab</strong></p>
+<ul>
+<li>Interactive Python notebooks</li>
+<li>AI-powered cell completion</li>
+<li>Data visualization tools</li>
+<li>Kernel management for different environments</li>
+<li>Extension ecosystem for scientific computing</li>
+</ul>
+<p><strong>Vim/Neovim</strong></p>
+<ul>
+<li>AI-powered code completion</li>
+<li>Nanite integration for CLI assistance</li>
+<li>Customizable for power users</li>
+</ul>
+<h3 id="programming-languages">Programming Languages</h3>
+<p><strong>Python 3.11+</strong>
+Pre-installed packages:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># AI/ML Libraries</span>
+</span></span><span class="line"><span class="cl"><span class="n">torch</span>              <span class="c1"># PyTorch for deep learning</span>
+</span></span><span class="line"><span class="cl"><span class="n">tensorflow</span>         <span class="c1"># Google&#39;s ML framework</span>
+</span></span><span class="line"><span class="cl"><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span>       <span class="c1"># Traditional ML algorithms</span>
+</span></span><span class="line"><span class="cl"><span class="n">numpy</span>              <span class="c1"># Numerical computing</span>
+</span></span><span class="line"><span class="cl"><span class="n">pandas</span>             <span class="c1"># Data manipulation</span>
+</span></span><span class="line"><span class="cl"><span class="n">matplotlib</span>         <span class="c1"># Plotting and visualization</span>
+</span></span><span class="line"><span class="cl"><span class="n">seaborn</span>            <span class="c1"># Statistical visualization</span>
+</span></span><span class="line"><span class="cl"><span class="n">jupyter</span>            <span class="c1"># Interactive notebooks</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Development Tools</span>
+</span></span><span class="line"><span class="cl"><span class="n">pytest</span>             <span class="c1"># Testing framework</span>
+</span></span><span class="line"><span class="cl"><span class="n">black</span>              <span class="c1"># Code formatting</span>
+</span></span><span class="line"><span class="cl"><span class="n">mypy</span>               <span class="c1"># Type checking</span>
+</span></span><span class="line"><span class="cl"><span class="n">poetry</span>             <span class="c1"># Dependency management</span>
+</span></span></code></pre></div><p><strong>Node.js &amp; JavaScript</strong></p>
+<ul>
+<li>Latest LTS version of Node.js</li>
+<li>npm and yarn package managers</li>
+<li>TypeScript support</li>
+<li>AI-assisted web development</li>
+</ul>
+<p><strong>Rust</strong></p>
+<ul>
+<li>Latest stable Rust compiler</li>
+<li>Cargo package manager</li>
+<li>AI assistance for systems programming</li>
+<li>WebAssembly support</li>
+</ul>
+<p><strong>Go</strong></p>
+<ul>
+<li>Go compiler and tools</li>
+<li>Module system support</li>
+<li>Concurrent programming assistance</li>
+</ul>
+<h3 id="version-control">Version Control</h3>
+<p><strong>Git</strong></p>
+<ul>
+<li>Pre-configured with sensible defaults</li>
+<li>AI-assisted commit messages</li>
+<li>Integration with GitHub, GitLab</li>
+<li>Git hooks for code quality</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># AI-assisted Git workflows</span>
+</span></span><span class="line"><span class="cl">git commit --ai-message    <span class="c1"># Generate commit messages</span>
+</span></span><span class="line"><span class="cl">git review --ai            <span class="c1"># AI code review</span>
+</span></span><span class="line"><span class="cl">git explain &lt;commit&gt;       <span class="c1"># Explain commit changes</span>
+</span></span></code></pre></div><h2 id="-containerization-and-virtualization">🐳 Containerization and Virtualization</h2>
+<h3 id="docker">Docker</h3>
+<ul>
+<li>Docker Engine pre-installed</li>
+<li>Docker Compose for multi-container apps</li>
+<li>AI model containers</li>
+<li>GPU support for CUDA containers</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Quick AI development containers</span>
+</span></span><span class="line"><span class="cl">docker run -it nanite/pytorch-dev     <span class="c1"># PyTorch development</span>
+</span></span><span class="line"><span class="cl">docker run -it nanite/tensorflow-dev  <span class="c1"># TensorFlow development</span>
+</span></span><span class="line"><span class="cl">docker run -it nanite/jupyter-ai      <span class="c1"># Jupyter with AI tools</span>
+</span></span></code></pre></div><h3 id="virtual-environments">Virtual Environments</h3>
+<p><strong>Python Virtual Environments</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create virtual environment with AI tools</span>
+</span></span><span class="line"><span class="cl">nanite-venv create myproject --ai-tools
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Activate environment</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.nanite-venvs/myproject/bin/activate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Install AI packages</span>
+</span></span><span class="line"><span class="cl">pip install transformers torch
+</span></span></code></pre></div><p><strong>Conda Integration</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Miniconda pre-installed</span>
+</span></span><span class="line"><span class="cl">conda create -n ai-env <span class="nv">python</span><span class="o">=</span>3.11
+</span></span><span class="line"><span class="cl">conda activate ai-env
+</span></span><span class="line"><span class="cl">conda install pytorch tensorflow-gpu
+</span></span></code></pre></div><h2 id="-ai-development-tools">🤖 AI Development Tools</h2>
+<h3 id="model-development">Model Development</h3>
+<p><strong>Ollama Development</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create custom models</span>
+</span></span><span class="line"><span class="cl">ollama create my-model -f Modelfile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Test model performance</span>
+</span></span><span class="line"><span class="cl">ollama benchmark my-model
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Model fine-tuning tools</span>
+</span></span><span class="line"><span class="cl">nanite-finetune --model mistral --dataset mydata.jsonl
+</span></span></code></pre></div><p><strong>Hugging Face Integration</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Pre-configured Hugging Face access</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoModel</span><span class="p">,</span> <span class="n">AutoTokenizer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.ai</span> <span class="kn">import</span> <span class="n">local_cache</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatic local caching</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;bert-base-uncased&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                  <span class="n">cache_dir</span><span class="o">=</span><span class="n">local_cache</span><span class="p">())</span>
+</span></span></code></pre></div><h3 id="dataset-management">Dataset Management</h3>
+<p><strong>Data Processing Tools</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Dataset preparation</span>
+</span></span><span class="line"><span class="cl">nanite-data prepare --input raw_data/ --output processed/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Data validation</span>
+</span></span><span class="line"><span class="cl">nanite-data validate dataset.csv --ai-check
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Synthetic data generation</span>
+</span></span><span class="line"><span class="cl">nanite-data generate --type text --samples <span class="m">1000</span>
+</span></span></code></pre></div><p><strong>Annotation Tools</strong></p>
+<ul>
+<li>Label Studio integration</li>
+<li>AI-assisted annotation</li>
+<li>Quality control with AI validation</li>
+</ul>
+<h3 id="training-and-experimentation">Training and Experimentation</h3>
+<p><strong>MLflow Integration</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">mlflow</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.ml</span> <span class="kn">import</span> <span class="n">auto_log</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatic experiment tracking</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">auto_log</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">train_model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s2">&#34;my_model&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Experiment Management</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Start MLflow server</span>
+</span></span><span class="line"><span class="cl">nanite-mlflow start
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Track experiments</span>
+</span></span><span class="line"><span class="cl">nanite-experiment track --name <span class="s2">&#34;bert-finetuning&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compare model performance</span>
+</span></span><span class="line"><span class="cl">nanite-experiment compare model1 model2
+</span></span></code></pre></div><h2 id="-web-development">🌐 Web Development</h2>
+<h3 id="frontend-development">Frontend Development</h3>
+<p><strong>React/Vue.js Setup</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create AI-powered web app</span>
+</span></span><span class="line"><span class="cl">npx create-nanite-app my-ai-app --template react-ai
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Include AI components</span>
+</span></span><span class="line"><span class="cl">npm install @nanite/ai-components
+</span></span></code></pre></div><p><strong>AI UI Components</strong></p>
+<ul>
+<li>Chat interfaces</li>
+<li>Code completion widgets</li>
+<li>Image generation components</li>
+<li>Speech recognition forms</li>
+</ul>
+<h3 id="backend-development">Backend Development</h3>
+<p><strong>FastAPI Templates</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate AI API backend</span>
+</span></span><span class="line"><span class="cl">nanite-scaffold api --framework fastapi --ai-enabled
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Include features:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Automatic API documentation</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - AI model endpoints</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Authentication with AI assistance</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Database integration</span>
+</span></span></code></pre></div><p><strong>Django AI Integration</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Django with AI capabilities</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># settings.py</span>
+</span></span><span class="line"><span class="cl"><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;nanite.django.ai&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;nanite.django.models&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ... other apps</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># AI model integration</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.django.ai</span> <span class="kn">import</span> <span class="n">AIModelField</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ai_summary</span> <span class="o">=</span> <span class="n">AIModelField</span><span class="p">(</span><span class="n">source_field</span><span class="o">=</span><span class="s1">&#39;content&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                             <span class="n">model</span><span class="o">=</span><span class="s1">&#39;mistral&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="-data-science-environment">📊 Data Science Environment</h2>
+<h3 id="analysis-tools">Analysis Tools</h3>
+<p><strong>Pandas AI</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.data</span> <span class="kn">import</span> <span class="n">ai_analyze</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># AI-powered data analysis</span>
+</span></span><span class="line"><span class="cl"><span class="n">insights</span> <span class="o">=</span> <span class="n">ai_analyze</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&#34;Find patterns in sales data&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Visualization</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># AI-assisted plotting</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.viz</span> <span class="kn">import</span> <span class="n">ai_plot</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate plots from descriptions</span>
+</span></span><span class="line"><span class="cl"><span class="n">ai_plot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&#34;Create a bar chart showing sales by region&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="database-integration">Database Integration</h3>
+<p><strong>Supported Databases</strong></p>
+<ul>
+<li>PostgreSQL with AI extensions</li>
+<li>SQLite with FTS5 for text search</li>
+<li>Vector databases (Chroma, FAISS)</li>
+<li>Graph databases (Neo4j)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># AI-powered database queries</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.db</span> <span class="kn">import</span> <span class="n">ai_query</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">ai_query</span><span class="p">(</span><span class="s2">&#34;Find customers with high churn risk&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="-debugging-and-testing">🔍 Debugging and Testing</h2>
+<h3 id="ai-assisted-debugging">AI-Assisted Debugging</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Intelligent debugging</span>
+</span></span><span class="line"><span class="cl">nanite-debug analyze crash_dump.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Performance profiling</span>
+</span></span><span class="line"><span class="cl">nanite-profile app.py --ai-suggestions
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Memory leak detection</span>
+</span></span><span class="line"><span class="cl">nanite-memory-check --ai-analysis
+</span></span></code></pre></div><h3 id="testing-with-ai">Testing with AI</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># AI-generated test cases</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">nanite.testing</span> <span class="kn">import</span> <span class="n">generate_tests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@generate_tests</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&#34;codellama&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Automatically generates comprehensive test cases</span>
+</span></span></code></pre></div><h3 id="code-quality">Code Quality</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># AI-powered code review</span>
+</span></span><span class="line"><span class="cl">nanite-review --files src/ --model codellama
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Security analysis</span>
+</span></span><span class="line"><span class="cl">nanite-security-scan --ai-check --depth deep
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Performance suggestions</span>
+</span></span><span class="line"><span class="cl">nanite-optimize-code --target performance
+</span></span></code></pre></div><h2 id="-deployment-and-production">🚀 Deployment and Production</h2>
+<h3 id="containerized-deployment">Containerized Deployment</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate production Dockerfile</span>
+</span></span><span class="line"><span class="cl">nanite-deploy generate-docker --app-type ai-service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Include:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Optimized AI model serving</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Health checks</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Resource limits</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Security hardening</span>
+</span></span></code></pre></div><h3 id="model-serving">Model Serving</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Deploy models as microservices</span>
+</span></span><span class="line"><span class="cl">nanite-serve deploy my-model --replicas <span class="m">3</span> --gpu-enabled
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load balancing and scaling</span>
+</span></span><span class="line"><span class="cl">nanite-serve scale my-model --min-replicas <span class="m">2</span> --max-replicas <span class="m">10</span>
+</span></span></code></pre></div><h3 id="monitoring">Monitoring</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># AI application monitoring</span>
+</span></span><span class="line"><span class="cl">nanite-monitor setup --app my-ai-app
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Includes:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Model performance metrics</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Resource usage tracking</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Error analysis with AI</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Automated alerting</span>
+</span></span></code></pre></div><h2 id="-configuration-and-customization">🔧 Configuration and Customization</h2>
+<h3 id="ide-configuration">IDE Configuration</h3>
+<p><strong>VSCode Settings</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nanite.ai.enabled&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nanite.ai.model&#34;</span><span class="p">:</span> <span class="s2">&#34;codellama&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nanite.ai.autoComplete&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;nanite.ai.codeReview&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>JupyterLab Extensions</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Install additional AI extensions</span>
+</span></span><span class="line"><span class="cl">jupyter labextension install @nanite/ai-assistant
+</span></span><span class="line"><span class="cl">jupyter labextension install @nanite/code-completion
+</span></span></code></pre></div><h3 id="environment-variables">Environment Variables</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Configure AI settings</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NANITE_AI_MODEL</span><span class="o">=</span><span class="s2">&#34;mistral&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NANITE_AI_CACHE_DIR</span><span class="o">=</span><span class="s2">&#34;/var/cache/nanite/models&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NANITE_AI_LOG_LEVEL</span><span class="o">=</span><span class="s2">&#34;INFO&#34;</span>
+</span></span></code></pre></div><h3 id="development-workflows">Development Workflows</h3>
+<p><strong>Pre-commit Hooks</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># .pre-commit-config.yaml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">repos</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l">local</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">ai-code-review</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">AI Code Review</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">entry</span><span class="p">:</span><span class="w"> </span><span class="l">nanite-review</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">system</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">files</span><span class="p">:</span><span class="w"> </span><span class="l">\.(py|js|ts)$</span><span class="w">
+</span></span></span></code></pre></div><h2 id="-learning-resources">📚 Learning Resources</h2>
+<h3 id="built-in-tutorials">Built-in Tutorials</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Interactive coding tutorials</span>
+</span></span><span class="line"><span class="cl">nanite-learn start python-ai    <span class="c1"># Python for AI</span>
+</span></span><span class="line"><span class="cl">nanite-learn start web-ai       <span class="c1"># AI web development</span>
+</span></span><span class="line"><span class="cl">nanite-learn start ml-basics    <span class="c1"># Machine learning basics</span>
+</span></span></code></pre></div><h3 id="sample-projects">Sample Projects</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Clone example projects</span>
+</span></span><span class="line"><span class="cl">nanite-examples clone chatbot-tutorial
+</span></span><span class="line"><span class="cl">nanite-examples clone image-classifier
+</span></span><span class="line"><span class="cl">nanite-examples clone rag-system
+</span></span></code></pre></div><h3 id="documentation">Documentation</h3>
+<ul>
+<li>Inline documentation with AI explanations</li>
+<li>Interactive API references</li>
+<li>Video tutorials with AI-generated captions</li>
+<li>Community-contributed examples</li>
+</ul>
+<h2 id="-pro-tips">💡 Pro Tips</h2>
+<ol>
+<li><strong>Use AI-assisted debugging</strong>: <code>nanite-debug --context python error.log</code></li>
+<li><strong>Generate documentation</strong>: <code>nanite-docs generate --ai-enhanced src/</code></li>
+<li><strong>Optimize imports</strong>: <code>nanite-optimize-imports --ai-suggestions</code></li>
+<li><strong>Code refactoring</strong>: <code>nanite-refactor --target readability</code></li>
+<li><strong>Performance profiling</strong>: <code>nanite-profile --ai-insights app.py</code></li>
+</ol>
+<p>Ready to start developing? Check out our <a href="ai-features/" >AI Features Guide</a> or explore <a href="building-apps/" >Building Custom AI Applications</a>.</p>
+<hr>
+<p>🚀 <strong>Quick Start</strong>: Run <code>nanite-dev-setup</code> to configure your development environment with AI assistance!</p>
+
+        </div>
+
+        <footer>
+          <time datetime="0001-01-01"><i>🕒</i> Updated: 0001-01-01</time>
+          <a href="//localhost:1313/docs/ai-features/"><i>﹤</i> Previous</a>
+          <a href="//localhost:1313/docs/hello-world/">Next <i>﹥</i></a>
+          </footer>
+      </article>
+
+      <aside>
+        <div>
+          <button class="btn"><i>❌</i>Close</button>
+        </div>
+        <strong>On this page</strong>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-pre-installed-development-tools">🔧 Pre-installed Development Tools</a>
+      <ul>
+        <li><a href="#code-editors-and-ides">Code Editors and IDEs</a></li>
+        <li><a href="#programming-languages">Programming Languages</a></li>
+        <li><a href="#version-control">Version Control</a></li>
+      </ul>
+    </li>
+    <li><a href="#-containerization-and-virtualization">🐳 Containerization and Virtualization</a>
+      <ul>
+        <li><a href="#docker">Docker</a></li>
+        <li><a href="#virtual-environments">Virtual Environments</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ai-development-tools">🤖 AI Development Tools</a>
+      <ul>
+        <li><a href="#model-development">Model Development</a></li>
+        <li><a href="#dataset-management">Dataset Management</a></li>
+        <li><a href="#training-and-experimentation">Training and Experimentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-web-development">🌐 Web Development</a>
+      <ul>
+        <li><a href="#frontend-development">Frontend Development</a></li>
+        <li><a href="#backend-development">Backend Development</a></li>
+      </ul>
+    </li>
+    <li><a href="#-data-science-environment">📊 Data Science Environment</a>
+      <ul>
+        <li><a href="#analysis-tools">Analysis Tools</a></li>
+        <li><a href="#database-integration">Database Integration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-debugging-and-testing">🔍 Debugging and Testing</a>
+      <ul>
+        <li><a href="#ai-assisted-debugging">AI-Assisted Debugging</a></li>
+        <li><a href="#testing-with-ai">Testing with AI</a></li>
+        <li><a href="#code-quality">Code Quality</a></li>
+      </ul>
+    </li>
+    <li><a href="#-deployment-and-production">🚀 Deployment and Production</a>
+      <ul>
+        <li><a href="#containerized-deployment">Containerized Deployment</a></li>
+        <li><a href="#model-serving">Model Serving</a></li>
+        <li><a href="#monitoring">Monitoring</a></li>
+      </ul>
+    </li>
+    <li><a href="#-configuration-and-customization">🔧 Configuration and Customization</a>
+      <ul>
+        <li><a href="#ide-configuration">IDE Configuration</a></li>
+        <li><a href="#environment-variables">Environment Variables</a></li>
+        <li><a href="#development-workflows">Development Workflows</a></li>
+      </ul>
+    </li>
+    <li><a href="#-learning-resources">📚 Learning Resources</a>
+      <ul>
+        <li><a href="#built-in-tutorials">Built-in Tutorials</a></li>
+        <li><a href="#sample-projects">Sample Projects</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-pro-tips">💡 Pro Tips</a></li>
+  </ul>
+</nav>
+      </aside>
+    </main>
+
+    <footer>
+      <div><i>🧑‍💻</i>Built by and copyright<a href="https://github.com/nanite" target="_blank">Nanite Linux Team</a><i>📅</i> 2024-2025<i>🚀</i> <a href="https://github.com/nanite/nanite_linux" target="_blank">GitHub</a></div>
+      <div>
+        <button class="btn"><i>☀️</i><i>⁄</i><i>🌑</i></button>
+      </div>
+    </footer>
+  </div>
+
+</div>
+
+<div id="body-model-outer"></div>
+<script type="text/javascript" src="/assets/js/docs.min.12ffdc25c0149ef34e761ee54587f2aae17affcb8375298ad2180851930cb142.js" integrity=""></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 theme: E25DX
-
 enableGitInfo: true
 
 defaultContentLanguage: en
@@ -10,9 +9,9 @@ languages:
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: Site Name
+    title: Nanite Linux - The Future of Computing
     params:
-      description: Site Description
+      description: Experience the power of next-generation Linux distribution designed for the modern world
 
 # To omit the Google Analytics script, put a ~ in place of the G-XXXXXXXXXX below.
 services:
@@ -33,20 +32,20 @@ markup:
 params:
   project:
     # To omit the startYear, put a ~ in its place.
-    startYear: 2022
+    startYear: 2024
     presentYear: 2025
     github:
-      repo: username/repo
+      repo: nanite/nanite_linux
     themeColor:
-      light: '#ffffff'
-      dark: '#101010'
+      light: '#00ff88'
+      dark: '#0a0a0a'
 
   author:
-    name: Name
-    url: https://github.com/username
+    name: Nanite Linux Team
+    url: https://github.com/nanite
 
   home:
-    heading: Your next
-    headingSegment2: Theme
-    description: Description
+    heading: Welcome to
+    headingSegment2: Nanite Linux
+    description: The ultimate Linux distribution engineered for tomorrow's computing needs
     getStartedPath: docs/

@@ -1,0 +1,17 @@
+- title: Documentation
+  pages:
+    - title: Overview
+    - title: About
+    - title: Features
+    - title: Installation
+    - title: AI Features
+    - title: Development Environment
+
+- title: Basics
+  pages:
+    - title: Hello World
+
+- title: Beyond The Basics
+  pages:
+    - title: Modules
+

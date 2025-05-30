@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en-US" class="scroll-smooth">
+
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanite Linux - The Future of Computing · Experience the power of next-generation Linux distribution designed for the modern world</title>
+  <meta name="description" content="Experience the power of next-generation Linux distribution designed for the modern world">
+  <meta name="author" content="Nanite Linux Team">
+  <meta name="theme-color" content="#00ff88" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  
+  <link rel="canonical" href="//localhost:1313/">
+
+  
+  <style>
+    :root {
+      --primary-color: #00ff88;
+      --secondary-color: #0099ff;
+      --accent-color: #ff3366;
+      --dark-bg: #0a0a0a;
+      --darker-bg: #050505;
+      --text-light: #ffffff;
+      --text-muted: #cccccc;
+      --glow: 0 0 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+     
+    .bg-animated {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+    }
+
+    .bg-animated::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(0, 153, 255, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 40% 80%, rgba(255, 51, 102, 0.1) 0%, transparent 50%);
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+     
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(15px);
+      z-index: 1000;
+      padding: 0;
+      border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background: rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 255, 136, 0.05);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .logo::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+      border-radius: 10px;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo:hover::before {
+      opacity: 0.1;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3));
+    }
+
+    .logo-text {
+      background: linear-gradient(45deg, var(--text-light), var(--primary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      display: block;
+    }
+
+    .nav-links a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .nav-links a:hover::before {
+      left: 100%;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-light);
+      background: rgba(0, 255, 136, 0.05);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 255, 136, 0.1);
+    }
+
+    .nav-links a.active {
+      color: var(--primary-color);
+      background: rgba(0, 255, 136, 0.1);
+    }
+
+    .download-btn {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+      color: var(--dark-bg) !important;
+      font-weight: 600 !important;
+      padding: 0.8rem 1.8rem !important;
+      border-radius: 25px !important;
+      transition: all 0.3s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+      border: 2px solid transparent !important;
+    }
+
+    .download-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 25px;
+    }
+
+    .download-btn:hover::before {
+      opacity: 1;
+    }
+
+    .download-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-links .download-btn:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 6px 25px rgba(0, 255, 136, 0.4) !important;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+      color: var(--dark-bg) !important;
+      border-color: var(--primary-color) !important;
+    }
+
+     
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu-btn:hover {
+      background: rgba(0, 255, 136, 0.1);
+    }
+
+    .mobile-menu-btn span {
+      width: 25px;
+      height: 3px;
+      background: var(--text-light);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+
+    .mobile-menu-btn.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .mobile-nav.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-nav ul {
+      list-style: none;
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: block;
+      text-align: center;
+      border: 1px solid transparent;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--text-light);
+      background: rgba(0, 255, 136, 0.05);
+      border-color: rgba(0, 255, 136, 0.2);
+    }
+
+    .mobile-nav .download-btn {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+      color: var(--dark-bg) !important;
+      font-weight: 600 !important;
+      margin-top: 1rem !important;
+    }
+
+     
+    @media (max-width: 968px) {
+      .nav-links,
+      .nav-content > .download-btn {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      .nav-container {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 1.4rem;
+      }
+      
+      .logo-icon {
+        font-size: 1.6rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .hero-content h1 {
+        font-size: 3rem;
+      }
+    }
+
+     
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .hero-content p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--text-muted);
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: var(--dark-bg);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-light);
+      border: 2px solid var(--primary-color);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--glow) var(--primary-color);
+    }
+
+     
+    .features {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      color: var(--primary-color);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--glow) rgba(0, 255, 136, 0.3);
+      border-color: var(--primary-color);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+    }
+
+     
+    .download-section {
+      padding: 5rem 2rem;
+      background: rgba(0, 255, 136, 0.05);
+      border-top: 1px solid rgba(0, 255, 136, 0.2);
+      border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    }
+
+    .download-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .download-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .download-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .download-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--glow) rgba(0, 255, 136, 0.3);
+    }
+
+    .download-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .download-card li {
+      margin: 0.5rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .download-card li::before {
+      content: "✓";
+      color: var(--primary-color);
+      position: absolute;
+      left: 0;
+    }
+
+    .version-badge {
+      background: var(--primary-color);
+      color: var(--dark-bg);
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+     
+    .community {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .community-link {
+      display: block;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+      text-decoration: none;
+      color: var(--text-light);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .community-link:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--glow) rgba(0, 255, 136, 0.3);
+      border-color: var(--primary-color);
+    }
+
+    .community-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+     
+    .footer {
+      background: var(--darker-bg);
+      padding: 3rem 2rem 1rem;
+      border-top: 1px solid rgba(0, 255, 136, 0.2);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .footer-section a {
+      color: var(--text-muted);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--primary-color);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0, 255, 136, 0.1);
+      color: var(--text-muted);
+    }
+
+     
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+<body>
+  <div class="bg-animated"></div>
+  
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="//localhost:1313/" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Nanite Linux - The Future of Computing</span>
+      </a>
+      <div class="nav-content">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="//localhost:1313/docs/">Documentation</a></li>
+        </ul>
+        <a href="#download" class="download-btn"><span>Download Now</span></a>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="#features" onclick="closeMobileMenu()">Features</a></li>
+        <li><a href="#download" onclick="closeMobileMenu()">Download</a></li>
+        <li><a href="#community" onclick="closeMobileMenu()">Community</a></li>
+        <li><a href="//localhost:1313/docs/" onclick="closeMobileMenu()">Documentation</a></li>
+        <li><a href="#download" class="download-btn" onclick="closeMobileMenu()"><span>Download Now</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>Welcome to Nanite Linux</h1>
+      <p>The ultimate Linux distribution engineered for tomorrow&#39;s computing needs</p>
+      <div class="cta-buttons">
+        <a href="#download" class="btn btn-primary">Download Free</a>
+        <a href="//localhost:1313/docs/" class="btn btn-secondary">Get Started</a>
+        <a href="https://github.com/nanite/nanite_linux" target="_blank" class="btn btn-secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="features" class="features">
+    <h2 class="section-title fade-in">Why Choose Nanite Linux?</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Optimized kernel and streamlined package management for maximum performance and minimal resource usage.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔒</div>
+        <h3>Ultra Secure</h3>
+        <p>Advanced security features including hardened kernel, mandatory access controls, and encrypted filesystem by default.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🎨</div>
+        <h3>Modern Interface</h3>
+        <p>Beautiful, intuitive desktop environment with customizable themes and smooth animations.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🛠️</div>
+        <h3>Developer Ready</h3>
+        <p>Pre-installed development tools, containers support, and seamless DevOps integration out of the box.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔄</div>
+        <h3>Rolling Release</h3>
+        <p>Always stay up-to-date with the latest software versions through our intelligent rolling release system.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🌐</div>
+        <h3>Universal Compatibility</h3>
+        <p>Run applications from multiple ecosystems including native, Flatpak, AppImage, and container formats.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="download" class="download-section">
+    <div class="download-container">
+      <h2 class="section-title fade-in">Download Nanite Linux</h2>
+      <p class="fade-in">Choose the edition that fits your needs</p>
+      <div class="download-options">
+        <div class="download-card fade-in">
+          <span class="version-badge">Desktop Edition</span>
+          <h3>For Personal Use</h3>
+          <p>Perfect for home users, gamers, and creative professionals</p>
+          <ul style="text-align: left; margin: 1rem 0; color: var(--text-muted);">
+            <li>Modern Desktop Environment</li>
+            <li>Gaming Optimizations</li>
+            <li>Multimedia Codecs</li>
+            <li>Office Applications</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download ISO (2.1 GB)</a>
+        </div>
+        <div class="download-card fade-in">
+          <span class="version-badge">Server Edition</span>
+          <h3>For Servers & Cloud</h3>
+          <p>Optimized for servers, containers, and cloud deployments</p>
+          <ul style="text-align: left; margin: 1rem 0; color: var(--text-muted);">
+            <li>Minimal Installation</li>
+            <li>Container Runtime</li>
+            <li>Security Hardening</li>
+            <li>Monitoring Tools</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download ISO (1.2 GB)</a>
+        </div>
+        <div class="download-card fade-in">
+          <span class="version-badge">Developer Edition</span>
+          <h3>For Developers</h3>
+          <p>Loaded with development tools and programming languages</p>
+          <ul style="text-align: left; margin: 1rem 0; color: var(--text-muted);">
+            <li>Pre-installed IDEs</li>
+            <li>Multiple Language Support</li>
+            <li>Docker & Kubernetes</li>
+            <li>Database Systems</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download ISO (3.8 GB)</a>
+        </div>
+      </div>
+      <div style="margin-top: 2rem;">
+        <p><strong>System Requirements:</strong> 64-bit processor, 4GB RAM (8GB recommended), 20GB storage</p>
+        <p><a href="#" style="color: var(--primary-color);">View installation guide</a> | <a href="#" style="color: var(--primary-color);">Verify checksums</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="community" class="community">
+    <h2 class="section-title fade-in">Join Our Community</h2>
+    <p class="fade-in" style="text-align: center; margin-bottom: 2rem;">Connect with thousands of Nanite Linux users worldwide</p>
+    <div class="community-grid">
+      <a href="#" class="community-link fade-in">
+        <div class="community-icon">💬</div>
+        <h4>Discord</h4>
+        <p>Real-time chat and support</p>
+      </a>
+      <a href="#" class="community-link fade-in">
+        <div class="community-icon">📱</div>
+        <h4>Reddit</h4>
+        <p>Community discussions</p>
+      </a>
+      <a href="https://github.com/nanite/nanite_linux" class="community-link fade-in">
+        <div class="community-icon">🐙</div>
+        <h4>GitHub</h4>
+        <p>Source code and issues</p>
+      </a>
+      <a href="#" class="community-link fade-in">
+        <div class="community-icon">📧</div>
+        <h4>Forum</h4>
+        <p>Official support forum</p>
+      </a>
+      <a href="#" class="community-link fade-in">
+        <div class="community-icon">📚</div>
+        <h4>Wiki</h4>
+        <p>Documentation and guides</p>
+      </a>
+      <a href="#" class="community-link fade-in">
+        <div class="community-icon">📰</div>
+        <h4>Blog</h4>
+        <p>Latest news and updates</p>
+      </a>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Download</h4>
+        <a href="#download">Desktop Edition</a>
+        <a href="#download">Server Edition</a>
+        <a href="#download">Developer Edition</a>
+        <a href="#">Archive Releases</a>
+      </div>
+      <div class="footer-section">
+        <h4>Documentation</h4>
+        <a href="//localhost:1313/docs/">Getting Started</a>
+        <a href="#">Installation Guide</a>
+        <a href="#">User Manual</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-section">
+        <h4>Community</h4>
+        <a href="#">Discord Server</a>
+        <a href="#">Reddit Community</a>
+        <a href="#">Support Forum</a>
+        <a href="#">Mailing Lists</a>
+      </div>
+      <div class="footer-section">
+        <h4>Development</h4>
+        <a href="https://github.com/nanite/nanite_linux">GitHub Repository</a>
+        <a href="#">Bug Reports</a>
+        <a href="#">Feature Requests</a>
+        <a href="#">Contributing</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024-2025 Nanite Linux Team. All rights reserved. | <a href="#" style="color: var(--primary-color);">Privacy Policy</a> | <a href="#" style="color: var(--primary-color);">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  
+  <script>
+    
+    function toggleMobileMenu() {
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      
+      mobileNav.classList.toggle('active');
+      mobileBtn.classList.toggle('active');
+    }
+
+    function closeMobileMenu() {
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      
+      mobileNav.classList.remove('active');
+      mobileBtn.classList.remove('active');
+    }
+
+    
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    
+    document.addEventListener('click', (e) => {
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      
+      if (!mobileNav.contains(e.target) && !mobileBtn.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          closeMobileMenu(); 
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector('.hero-content');
+      if (parallax && scrolled < window.innerHeight) {
+        const speed = scrolled * 0.1;
+        parallax.style.transform = `translateY(${speed}px)`;
+      }
+    });
+
+    
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPos = window.scrollY + 100;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          document.querySelectorAll('.nav-links a').forEach(link => {
+            link.classList.remove('active');
+          });
+          const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+          if (activeLink) {
+            activeLink.classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

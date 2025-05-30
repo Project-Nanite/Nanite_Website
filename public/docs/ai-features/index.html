@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experience the power of next-generation Linux distribution designed for the modern world">
+  <meta name="author" content="Nanite Linux Team">
+  <meta name="theme-color" content="#00ff88" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <title>AI Features · Nanite Linux - The Future of Computing</title>
+  <link rel="canonical" href="//localhost:1313/docs/ai-features/">
+  <link rel="stylesheet" href="/assets/css/docs.min.8e9408609771a441499aa5571a4585b0ca95783b842d5c758af5eef1457b0fe0.css" integrity="">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+<body>
+
+<div id="outer-wrapper">
+
+  <div id="aside-wrapper">
+    <aside>
+      <div>
+        <button class="btn"><i>❌</i>Close</button>
+      </div>
+
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+
+      <nav role="navigation">
+        <details open>
+          <summary>Documentation</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/overview/">Overview</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/about/">About</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/features/">Features</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/installation/">Installation</a>
+            </li>
+            <li>
+              <a class="active" href="//localhost:1313/docs/ai-features/">AI Features</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/development-environment/">Development Environment</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Basics</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/hello-world/">Hello World</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Beyond The Basics</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/modules/">Modules</a>
+            </li>
+            </ul>
+        </details>
+        
+      </nav>
+    </aside>
+  </div>
+
+  <div id="content-wrapper">
+    <header>
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+    </header>
+
+    <main>
+      <article>
+        <nav>
+          <button class="btn"><i>⬅️</i> On this section</button>
+          <button class="btn">On this page <i>➡️</i></button>
+        </nav>
+        <header>
+          <h1>AI Features</h1>
+          <p></p>
+        </header>
+        <div id="article-body">
+          <h1 id="ai-features-in-nanite-linux">AI Features in Nanite Linux</h1>
+<p>Explore the comprehensive AI capabilities built into Nanite Linux, designed to enhance your productivity and creativity.</p>
+<h2 id="-ai-assistant">🤖 AI Assistant</h2>
+<p>The Nanite AI Assistant is your intelligent companion for system-wide assistance.</p>
+<h3 id="gui-interface">GUI Interface</h3>
+<p>Launch the AI Assistant from:</p>
+<ul>
+<li>Panel icon (AI brain icon)</li>
+<li>Applications menu → AI Tools → Nanite Assistant</li>
+<li>Keyboard shortcut: <code>Ctrl+Alt+A</code></li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Natural language interaction</li>
+<li>Context-aware responses</li>
+<li>Multi-turn conversations</li>
+<li>Code syntax highlighting</li>
+<li>Export conversations to files</li>
+</ul>
+<h3 id="cli-interface">CLI Interface</h3>
+<p>Access AI assistance from any terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Ask questions</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;How do I install Python packages?&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get coding help</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;Write a Python function to read CSV files&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># System administration</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;How do I check disk usage in Linux?&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Interactive mode</span>
+</span></span><span class="line"><span class="cl">nanite-ask --interactive
+</span></span></code></pre></div><p><strong>Advanced Options:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Specify model</span>
+</span></span><span class="line"><span class="cl">nanite-ask --model codellama <span class="s2">&#34;Explain this Python code&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Save output</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;Generate a README template&#34;</span> --output README.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set context</span>
+</span></span><span class="line"><span class="cl">nanite-ask --context programming <span class="s2">&#34;Debug this error: ImportError&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="-language-models-llms">🧠 Language Models (LLMs)</h2>
+<p>Nanite uses Ollama to manage local language models, ensuring privacy and performance.</p>
+<h3 id="available-models">Available Models</h3>
+<p><strong>Pre-installed Models:</strong></p>
+<ul>
+<li><strong>Mistral 7B</strong>: General-purpose chat and assistance</li>
+<li><strong>CodeLlama 7B</strong>: Code generation and analysis</li>
+<li><strong>Llama2 7B</strong>: Alternative general-purpose model</li>
+</ul>
+<p><strong>Optional Models:</strong></p>
+<ul>
+<li><strong>Vicuna 13B</strong>: Enhanced conversational abilities</li>
+<li><strong>WizardCoder</strong>: Specialized coding assistant</li>
+<li><strong>Alpaca</strong>: Instruction-following model</li>
+</ul>
+<h3 id="model-management">Model Management</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># List installed models</span>
+</span></span><span class="line"><span class="cl">ollama list
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Install new models</span>
+</span></span><span class="line"><span class="cl">ollama pull llama2:13b
+</span></span><span class="line"><span class="cl">ollama pull vicuna:7b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Remove models</span>
+</span></span><span class="line"><span class="cl">ollama rm vicuna:7b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Check model information</span>
+</span></span><span class="line"><span class="cl">ollama show mistral
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run interactive chat</span>
+</span></span><span class="line"><span class="cl">ollama run mistral
+</span></span></code></pre></div><h3 id="model-usage-in-applications">Model Usage in Applications</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Use specific model with AI assistant</span>
+</span></span><span class="line"><span class="cl">nanite-ask --model codellama <span class="s2">&#34;Optimize this SQL query&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Switch default model</span>
+</span></span><span class="line"><span class="cl">nanite-config <span class="nb">set</span> default-model vicuna
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Model performance comparison</span>
+</span></span><span class="line"><span class="cl">nanite-benchmark --models mistral,codellama,llama2
+</span></span></code></pre></div><hr>
+<h2 id="-code-assistance">💻 Code Assistance</h2>
+<p>Nanite provides comprehensive AI-powered coding assistance across multiple programming languages.</p>
+<h3 id="code-generation">Code Generation</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate functions from descriptions</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist generate <span class="s2">&#34;function to sort a list of dictionaries by a key&#34;</span> --language python
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create boilerplate code</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist scaffold <span class="s2">&#34;REST API with authentication&#34;</span> --framework fastapi
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate test cases</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist <span class="nb">test</span> myfunction.py --framework pytest
+</span></span></code></pre></div><h3 id="code-analysis-and-completion">Code Analysis and Completion</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Complete partial code</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist <span class="nb">complete</span> incomplete_script.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Explain existing code</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist explain complex_algorithm.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Refactor code</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist refactor legacy_code.py --style modern
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fix code issues</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist fix buggy_script.py
+</span></span></code></pre></div><h3 id="ide-integration">IDE Integration</h3>
+<p><strong>VSCode Extensions (Pre-installed):</strong></p>
+<ul>
+<li>Nanite AI Assistant</li>
+<li>Code completion with local models</li>
+<li>Inline code explanations</li>
+<li>AI-powered debugging assistance</li>
+</ul>
+<p><strong>JupyterLab Extensions:</strong></p>
+<ul>
+<li>Cell completion with AI</li>
+<li>Code explanation in markdown cells</li>
+<li>Dataset analysis suggestions</li>
+<li>Automatic documentation generation</li>
+</ul>
+<h3 id="multi-language-support">Multi-Language Support</h3>
+<p>Supported programming languages:</p>
+<ul>
+<li><strong>Python</strong>: Full support with library-specific assistance</li>
+<li><strong>JavaScript/TypeScript</strong>: Web development focused</li>
+<li><strong>Rust</strong>: Systems programming assistance</li>
+<li><strong>Go</strong>: Concurrent programming patterns</li>
+<li><strong>C/C++</strong>: Performance optimization suggestions</li>
+<li><strong>Java</strong>: Enterprise patterns and best practices</li>
+<li><strong>Shell/Bash</strong>: System administration scripts</li>
+</ul>
+<hr>
+<h2 id="-image-generation">🖼️ Image Generation</h2>
+<p>Create images from text descriptions using local AI models.</p>
+<h3 id="basic-image-generation">Basic Image Generation</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate images from text</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;A serene mountain landscape at sunset&#34;</span> --output landscape.png
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Specify image dimensions</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;A futuristic robot&#34;</span> --size 1024x1024 --output robot.png
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Batch generation</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;Abstract art&#34;</span> --count <span class="m">5</span> --output-dir ./art/
+</span></span></code></pre></div><h3 id="advanced-options">Advanced Options</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Style specifications</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;A cat&#34;</span> --style <span class="s2">&#34;oil painting&#34;</span> --output cat_painting.png
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Quality settings</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;City skyline&#34;</span> --quality high --steps <span class="m">50</span> --output city.png
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Seed for reproducibility</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;Random pattern&#34;</span> --seed <span class="m">12345</span> --output pattern.png
+</span></span></code></pre></div><h3 id="supported-models">Supported Models</h3>
+<ul>
+<li><strong>Stable Diffusion 1.5</strong>: General image generation</li>
+<li><strong>Stable Diffusion XL</strong>: Higher quality images</li>
+<li><strong>LCM (Latent Consistency Model)</strong>: Fast generation</li>
+</ul>
+<h3 id="gui-application">GUI Application</h3>
+<p>Launch the Image Generator from Applications → AI Tools → Image Generator:</p>
+<ul>
+<li>Interactive prompt refinement</li>
+<li>Real-time preview</li>
+<li>Style presets</li>
+<li>Batch processing interface</li>
+</ul>
+<hr>
+<h2 id="-speech-and-audio">🎤 Speech and Audio</h2>
+<p>Process audio and speech with local AI models.</p>
+<h3 id="speech-to-text">Speech-to-Text</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Transcribe audio files</span>
+</span></span><span class="line"><span class="cl">nanite-speech transcribe recording.mp3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Live transcription</span>
+</span></span><span class="line"><span class="cl">nanite-speech transcribe --live --input-device microphone
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Batch transcription</span>
+</span></span><span class="line"><span class="cl">nanite-speech transcribe *.wav --output transcripts/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Language specification</span>
+</span></span><span class="line"><span class="cl">nanite-speech transcribe spanish_audio.mp3 --language es
+</span></span></code></pre></div><h3 id="text-to-speech">Text-to-Speech</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate speech from text</span>
+</span></span><span class="line"><span class="cl">nanite-speech synthesize <span class="s2">&#34;Hello, welcome to Nanite Linux&#34;</span> --output welcome.wav
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Choose voice characteristics</span>
+</span></span><span class="line"><span class="cl">nanite-speech synthesize <span class="s2">&#34;Important announcement&#34;</span> --voice female --speed slow
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># SSML support for advanced control</span>
+</span></span><span class="line"><span class="cl">nanite-speech synthesize --ssml <span class="s2">&#34;&lt;speak&gt;&lt;prosody rate=&#39;fast&#39;&gt;Quick message&lt;/prosody&gt;&lt;/speak&gt;&#34;</span>
+</span></span></code></pre></div><h3 id="audio-processing">Audio Processing</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Noise reduction</span>
+</span></span><span class="line"><span class="cl">nanite-audio clean noisy_recording.wav --output clean.wav
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Audio enhancement</span>
+</span></span><span class="line"><span class="cl">nanite-audio enhance podcast.mp3 --output enhanced_podcast.mp3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Format conversion</span>
+</span></span><span class="line"><span class="cl">nanite-audio convert input.mp3 --format wav --output converted.wav
+</span></span></code></pre></div><hr>
+<h2 id="-knowledge-management-rag">📚 Knowledge Management (RAG)</h2>
+<p>Retrieve and analyze information from your documents using AI.</p>
+<h3 id="document-analysis">Document Analysis</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Query single documents</span>
+</span></span><span class="line"><span class="cl">nanite-rag document.pdf <span class="s2">&#34;What are the main conclusions?&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Analyze multiple documents</span>
+</span></span><span class="line"><span class="cl">nanite-rag research_papers/*.pdf <span class="s2">&#34;Compare the methodologies used&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Supported formats: PDF, TXT, MD, DOCX, HTML</span>
+</span></span><span class="line"><span class="cl">nanite-rag mixed_docs/ <span class="s2">&#34;Summarize key findings&#34;</span> --recursive
+</span></span></code></pre></div><h3 id="knowledge-base-creation">Knowledge Base Creation</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create searchable knowledge base</span>
+</span></span><span class="line"><span class="cl">nanite-rag index ./documents/ --name my_knowledge_base
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Query knowledge base</span>
+</span></span><span class="line"><span class="cl">nanite-rag query my_knowledge_base <span class="s2">&#34;How does machine learning work?&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Update knowledge base</span>
+</span></span><span class="line"><span class="cl">nanite-rag update my_knowledge_base --add new_documents/
+</span></span></code></pre></div><h3 id="research-assistance">Research Assistance</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Literature review</span>
+</span></span><span class="line"><span class="cl">nanite-rag papers/ <span class="s2">&#34;What are current trends in AI research?&#34;</span> --mode research
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Citation extraction</span>
+</span></span><span class="line"><span class="cl">nanite-rag paper.pdf --extract-citations --format bibtex
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fact checking</span>
+</span></span><span class="line"><span class="cl">nanite-rag sources/ <span class="s2">&#34;Verify this claim: AI will replace all programmers&#34;</span> --fact-check
+</span></span></code></pre></div><hr>
+<h2 id="-system-integration">🔧 System Integration</h2>
+<p>AI features are seamlessly integrated throughout the Nanite desktop experience.</p>
+<h3 id="file-manager-integration">File Manager Integration</h3>
+<p>Right-click context menus include:</p>
+<ul>
+<li><strong>Explain File</strong>: Get AI explanation of file contents</li>
+<li><strong>Summarize Document</strong>: Generate document summaries</li>
+<li><strong>Extract Text</strong>: OCR and text extraction from images</li>
+<li><strong>Generate Metadata</strong>: AI-generated file descriptions</li>
+</ul>
+<h3 id="terminal-integration">Terminal Integration</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Intelligent command suggestions</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Type partial command and press Tab for AI suggestions</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Command explanation</span>
+</span></span><span class="line"><span class="cl">nanite-explain <span class="s2">&#34;find / -name &#39;*.py&#39; -exec grep -l &#39;import torch&#39; {} \;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Error analysis</span>
+</span></span><span class="line"><span class="cl">nanite-debug <span class="s2">&#34;command failed with error: permission denied&#34;</span>
+</span></span></code></pre></div><h3 id="desktop-notifications">Desktop Notifications</h3>
+<ul>
+<li>AI task completion notifications</li>
+<li>Model download progress</li>
+<li>Resource usage alerts</li>
+<li>Security recommendations</li>
+</ul>
+<h3 id="global-hotkeys">Global Hotkeys</h3>
+<ul>
+<li><code>Ctrl+Alt+A</code>: Open AI Assistant</li>
+<li><code>Ctrl+Alt+S</code>: Voice input to AI</li>
+<li><code>Ctrl+Alt+C</code>: Capture and analyze screenshot</li>
+<li><code>Ctrl+Alt+T</code>: Translate selected text</li>
+</ul>
+<hr>
+<h2 id="-configuration-and-customization">⚙️ Configuration and Customization</h2>
+<h3 id="ai-settings">AI Settings</h3>
+<p>Access AI configuration through:</p>
+<ul>
+<li>Settings → AI Configuration</li>
+<li>Command line: <code>nanite-config</code></li>
+</ul>
+<p><strong>Configurable Options:</strong></p>
+<ul>
+<li>Default AI models for different tasks</li>
+<li>Resource allocation (CPU, RAM, GPU)</li>
+<li>Privacy settings (local vs. cloud processing)</li>
+<li>Model download locations</li>
+<li>Response creativity levels</li>
+</ul>
+<h3 id="model-performance-tuning">Model Performance Tuning</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Optimize for speed</span>
+</span></span><span class="line"><span class="cl">nanite-optimize --profile speed
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Optimize for quality</span>
+</span></span><span class="line"><span class="cl">nanite-optimize --profile quality
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Custom optimization</span>
+</span></span><span class="line"><span class="cl">nanite-optimize --cpu-threads <span class="m">8</span> --gpu-memory 8GB
+</span></span></code></pre></div><h3 id="privacy-controls">Privacy Controls</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># View privacy settings</span>
+</span></span><span class="line"><span class="cl">nanite-privacy status
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Enable strict local-only mode</span>
+</span></span><span class="line"><span class="cl">nanite-privacy <span class="nb">set</span> --local-only
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Configure data retention</span>
+</span></span><span class="line"><span class="cl">nanite-privacy <span class="nb">set</span> --retention-days <span class="m">30</span>
+</span></span></code></pre></div><hr>
+<h2 id="-use-cases-and-examples">🎯 Use Cases and Examples</h2>
+<h3 id="for-developers">For Developers</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Debug code</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist debug error_log.txt --context python
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate API documentation</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist document api.py --format markdown
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Code review assistance</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist review pull_request.diff
+</span></span></code></pre></div><h3 id="for-researchers">For Researchers</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Analyze research papers</span>
+</span></span><span class="line"><span class="cl">nanite-rag papers/ <span class="s2">&#34;Compare machine learning approaches&#34;</span> --academic
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate research summaries</span>
+</span></span><span class="line"><span class="cl">nanite-rag study_data/ <span class="s2">&#34;Summarize experimental results&#34;</span> --scientific
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Citation management</span>
+</span></span><span class="line"><span class="cl">nanite-research cite <span class="s2">&#34;machine learning in healthcare&#34;</span> --format apa
+</span></span></code></pre></div><h3 id="for-content-creators">For Content Creators</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate blog post ideas</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;Generate 10 blog post ideas about Linux&#34;</span> --creative
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create social media content</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;Write a Twitter thread about AI privacy&#34;</span> --format twitter
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Image generation for content</span>
+</span></span><span class="line"><span class="cl">nanite-image-gen <span class="s2">&#34;Blog header about artificial intelligence&#34;</span> --size 1200x600
+</span></span></code></pre></div><h3 id="for-system-administrators">For System Administrators</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Log analysis</span>
+</span></span><span class="line"><span class="cl">nanite-rag /var/log/ <span class="s2">&#34;Identify potential security issues&#34;</span> --context sysadmin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Script generation</span>
+</span></span><span class="line"><span class="cl">nanite-code-assist generate <span class="s2">&#34;backup script for database&#34;</span> --language bash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># System optimization recommendations</span>
+</span></span><span class="line"><span class="cl">nanite-ask <span class="s2">&#34;How to optimize this server for AI workloads?&#34;</span> --context system
+</span></span></code></pre></div><hr>
+<p>Ready to dive deeper? Check out our <a href="development/" >Development Environment</a> guide or explore <a href="development/custom-ai/" >Building Custom AI Applications</a>.</p>
+<p>🚀 <strong>Pro Tip</strong>: Use <code>nanite-help</code> for context-sensitive AI assistance based on your current activity!</p>
+
+        </div>
+
+        <footer>
+          <time datetime="0001-01-01"><i>🕒</i> Updated: 0001-01-01</time>
+          <a href="//localhost:1313/docs/installation/"><i>﹤</i> Previous</a>
+          <a href="//localhost:1313/docs/development-environment/">Next <i>﹥</i></a>
+          </footer>
+      </article>
+
+      <aside>
+        <div>
+          <button class="btn"><i>❌</i>Close</button>
+        </div>
+        <strong>On this page</strong>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-ai-assistant">🤖 AI Assistant</a>
+      <ul>
+        <li><a href="#gui-interface">GUI Interface</a></li>
+        <li><a href="#cli-interface">CLI Interface</a></li>
+      </ul>
+    </li>
+    <li><a href="#-language-models-llms">🧠 Language Models (LLMs)</a>
+      <ul>
+        <li><a href="#available-models">Available Models</a></li>
+        <li><a href="#model-management">Model Management</a></li>
+        <li><a href="#model-usage-in-applications">Model Usage in Applications</a></li>
+      </ul>
+    </li>
+    <li><a href="#-code-assistance">💻 Code Assistance</a>
+      <ul>
+        <li><a href="#code-generation">Code Generation</a></li>
+        <li><a href="#code-analysis-and-completion">Code Analysis and Completion</a></li>
+        <li><a href="#ide-integration">IDE Integration</a></li>
+        <li><a href="#multi-language-support">Multi-Language Support</a></li>
+      </ul>
+    </li>
+    <li><a href="#-image-generation">🖼️ Image Generation</a>
+      <ul>
+        <li><a href="#basic-image-generation">Basic Image Generation</a></li>
+        <li><a href="#advanced-options">Advanced Options</a></li>
+        <li><a href="#supported-models">Supported Models</a></li>
+        <li><a href="#gui-application">GUI Application</a></li>
+      </ul>
+    </li>
+    <li><a href="#-speech-and-audio">🎤 Speech and Audio</a>
+      <ul>
+        <li><a href="#speech-to-text">Speech-to-Text</a></li>
+        <li><a href="#text-to-speech">Text-to-Speech</a></li>
+        <li><a href="#audio-processing">Audio Processing</a></li>
+      </ul>
+    </li>
+    <li><a href="#-knowledge-management-rag">📚 Knowledge Management (RAG)</a>
+      <ul>
+        <li><a href="#document-analysis">Document Analysis</a></li>
+        <li><a href="#knowledge-base-creation">Knowledge Base Creation</a></li>
+        <li><a href="#research-assistance">Research Assistance</a></li>
+      </ul>
+    </li>
+    <li><a href="#-system-integration">🔧 System Integration</a>
+      <ul>
+        <li><a href="#file-manager-integration">File Manager Integration</a></li>
+        <li><a href="#terminal-integration">Terminal Integration</a></li>
+        <li><a href="#desktop-notifications">Desktop Notifications</a></li>
+        <li><a href="#global-hotkeys">Global Hotkeys</a></li>
+      </ul>
+    </li>
+    <li><a href="#-configuration-and-customization">⚙️ Configuration and Customization</a>
+      <ul>
+        <li><a href="#ai-settings">AI Settings</a></li>
+        <li><a href="#model-performance-tuning">Model Performance Tuning</a></li>
+        <li><a href="#privacy-controls">Privacy Controls</a></li>
+      </ul>
+    </li>
+    <li><a href="#-use-cases-and-examples">🎯 Use Cases and Examples</a>
+      <ul>
+        <li><a href="#for-developers">For Developers</a></li>
+        <li><a href="#for-researchers">For Researchers</a></li>
+        <li><a href="#for-content-creators">For Content Creators</a></li>
+        <li><a href="#for-system-administrators">For System Administrators</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </aside>
+    </main>
+
+    <footer>
+      <div><i>🧑‍💻</i>Built by and copyright<a href="https://github.com/nanite" target="_blank">Nanite Linux Team</a><i>📅</i> 2024-2025<i>🚀</i> <a href="https://github.com/nanite/nanite_linux" target="_blank">GitHub</a></div>
+      <div>
+        <button class="btn"><i>☀️</i><i>⁄</i><i>🌑</i></button>
+      </div>
+    </footer>
+  </div>
+
+</div>
+
+<div id="body-model-outer"></div>
+<script type="text/javascript" src="/assets/js/docs.min.12ffdc25c0149ef34e761ee54587f2aae17affcb8375298ad2180851930cb142.js" integrity=""></script>
+</body>
+</html>

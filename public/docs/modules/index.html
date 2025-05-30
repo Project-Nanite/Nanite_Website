@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experience the power of next-generation Linux distribution designed for the modern world">
+  <meta name="author" content="Nanite Linux Team">
+  <meta name="theme-color" content="#00ff88" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <title>Modules · Nanite Linux - The Future of Computing</title>
+  <link rel="canonical" href="//localhost:1313/docs/modules/">
+  <link rel="stylesheet" href="/assets/css/docs.min.8e9408609771a441499aa5571a4585b0ca95783b842d5c758af5eef1457b0fe0.css" integrity="">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+<body>
+
+<div id="outer-wrapper">
+
+  <div id="aside-wrapper">
+    <aside>
+      <div>
+        <button class="btn"><i>❌</i>Close</button>
+      </div>
+
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+
+      <nav role="navigation">
+        <details open>
+          <summary>Documentation</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/overview/">Overview</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/about/">About</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/features/">Features</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/installation/">Installation</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/ai-features/">AI Features</a>
+            </li>
+            <li>
+              <a class="" href="//localhost:1313/docs/development-environment/">Development Environment</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Basics</summary>
+          <ul>
+            <li>
+              <a class="" href="//localhost:1313/docs/hello-world/">Hello World</a>
+            </li>
+            </ul>
+        </details>
+        <details open>
+          <summary>Beyond The Basics</summary>
+          <ul>
+            <li>
+              <a class="active" href="//localhost:1313/docs/modules/">Modules</a>
+            </li>
+            </ul>
+        </details>
+        
+      </nav>
+    </aside>
+  </div>
+
+  <div id="content-wrapper">
+    <header>
+      <a href="//localhost:1313/" class="site-logo">Nanite Linux - The Future of Computing</a>
+    </header>
+
+    <main>
+      <article>
+        <nav>
+          <button class="btn"><i>⬅️</i> On this section</button>
+          <button class="btn">On this page <i>➡️</i></button>
+        </nav>
+        <header>
+          <h1>Modules</h1>
+          <p></p>
+        </header>
+        <div id="article-body">
+          <h1 id="modules">Modules</h1>
+<p>Modules in Nanite provide extended functionality and customization options for your website. This section covers the advanced features available in Nanite.</p>
+<h2 id="theme-configuration">Theme Configuration</h2>
+<p>Nanite offers extensive configuration options through the <code>hugo.yaml</code> file. You can customize:</p>
+<ul>
+<li><strong>Theme Colors</strong>: Light and dark mode support</li>
+<li><strong>Navigation</strong>: Custom menu structures</li>
+<li><strong>Branding</strong>: Logo, title, and description</li>
+<li><strong>Analytics</strong>: Google Analytics integration</li>
+</ul>
+<h3 id="example-configuration">Example Configuration</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">startYear</span><span class="p">:</span><span class="w"> </span><span class="m">2022</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">presentYear</span><span class="p">:</span><span class="w"> </span><span class="m">2025</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">github</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l">username/repo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">themeColor</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">light</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#ffffff&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">dark</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#101010&#39;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="service-worker">Service Worker</h2>
+<p>Nanite includes a built-in service worker for offline functionality. The service worker:</p>
+<ul>
+<li>Caches static assets</li>
+<li>Provides offline navigation</li>
+<li>Improves loading performance</li>
+<li>Can be customized via <code>static/sw.js</code></li>
+</ul>
+<h2 id="progressive-web-app-pwa">Progressive Web App (PWA)</h2>
+<p>With the included <code>manifest.json</code>, your Nanite site can function as a Progressive Web App:</p>
+<ul>
+<li>Installable on mobile devices</li>
+<li>Offline functionality</li>
+<li>App-like experience</li>
+<li>Custom icons and branding</li>
+</ul>
+<h2 id="advanced-features">Advanced Features</h2>
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
+<p>Nanite supports syntax highlighting for code blocks using Hugo&rsquo;s built-in Chroma highlighter.</p>
+<h3 id="responsive-design">Responsive Design</h3>
+<p>All Nanite themes are fully responsive and work seamlessly across desktop, tablet, and mobile devices.</p>
+<h3 id="seo-optimization">SEO Optimization</h3>
+<p>Built-in SEO features include:</p>
+<ul>
+<li>Meta tags</li>
+<li>Open Graph support</li>
+<li>Structured data</li>
+<li>Sitemap generation</li>
+</ul>
+
+        </div>
+
+        <footer>
+          <time datetime="0001-01-01"><i>🕒</i> Updated: 0001-01-01</time>
+          <a href="//localhost:1313/docs/hello-world/"><i>﹤</i> Previous</a>
+          <a class="hidden">Next <i>﹥</i></a>
+          </footer>
+      </article>
+
+      <aside>
+        <div>
+          <button class="btn"><i>❌</i>Close</button>
+        </div>
+        <strong>On this page</strong>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#theme-configuration">Theme Configuration</a>
+      <ul>
+        <li><a href="#example-configuration">Example Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#service-worker">Service Worker</a></li>
+    <li><a href="#progressive-web-app-pwa">Progressive Web App (PWA)</a></li>
+    <li><a href="#advanced-features">Advanced Features</a>
+      <ul>
+        <li><a href="#syntax-highlighting">Syntax Highlighting</a></li>
+        <li><a href="#responsive-design">Responsive Design</a></li>
+        <li><a href="#seo-optimization">SEO Optimization</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </aside>
+    </main>
+
+    <footer>
+      <div><i>🧑‍💻</i>Built by and copyright<a href="https://github.com/nanite" target="_blank">Nanite Linux Team</a><i>📅</i> 2024-2025<i>🚀</i> <a href="https://github.com/nanite/nanite_linux" target="_blank">GitHub</a></div>
+      <div>
+        <button class="btn"><i>☀️</i><i>⁄</i><i>🌑</i></button>
+      </div>
+    </footer>
+  </div>
+
+</div>
+
+<div id="body-model-outer"></div>
+<script type="text/javascript" src="/assets/js/docs.min.12ffdc25c0149ef34e761ee54587f2aae17affcb8375298ad2180851930cb142.js" integrity=""></script>
+</body>
+</html>
